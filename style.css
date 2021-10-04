@@ -21,15 +21,20 @@ body {
   height: 100px;
   background-color: rosybrown;
   padding: 1rem;
+  transition: transform 0.5s linear 0.9s;
+  /* 1.time of the act 2.speed of act 3.delay time for implemention  */
 }
 .box2:hover {
   transform: scale(1.5);
+  background-color: rgb(151, 112, 112);
 }
 .box3 {
   width: 100px;
   height: 100px;
   background-color: darkcyan;
   padding: 1rem;
+  transition: transform 0.5s ease-in;
+  /* at first it's speed is slow and then got faster movement */
 }
 .box3:hover {
   transform: translateX(45px) rotate(45deg);
@@ -39,6 +44,8 @@ body {
   height: 100px;
   background-color: burlywood;
   padding: 1rem;
+  transition: transform 0.5s ease-out;
+  /* the opposit of ease-in */
 }
 .box4:hover {
   transform: rotate(45deg) translateX(45px);
