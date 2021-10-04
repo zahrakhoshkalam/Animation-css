@@ -1,0 +1,44 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: row;
+  gap: 2rem;
+}
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: cadetblue;
+  padding: 1rem;
+}
+.box:hover {
+  transform: rotate(15deg);
+}
+.box2 {
+  width: 100px;
+  height: 100px;
+  background-color: rosybrown;
+  padding: 1rem;
+}
+.box2:hover {
+  transform: scale(1.5);
+}
+.box3 {
+  width: 100px;
+  height: 100px;
+  background-color: darkcyan;
+  padding: 1rem;
+}
+.box3:hover {
+  transform: translateX(45px) rotate(45deg);
+}
+.box4 {
+  width: 100px;
+  height: 100px;
+  background-color: burlywood;
+  padding: 1rem;
+}
+.box4:hover {
+  transform: rotate(45deg) translateX(45px);
+}
