@@ -5,6 +5,7 @@ body {
   height: 100vh;
   flex-direction: row;
   gap: 2rem;
+  flex-wrap: wrap;
 }
 .box {
   width: 100px;
@@ -41,4 +42,40 @@ body {
 }
 .box4:hover {
   transform: rotate(45deg) translateX(45px);
+}
+.box5 {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(1, 102, 102);
+  padding: 1rem;
+}
+.box5:hover {
+  transform: perspective(150px) translateZ(-45px);
+}
+.box6 {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(248, 100, 228);
+  padding: 1rem;
+}
+.box6:hover {
+  transform: perspective(150px) rotateY(45deg);
+}
+.box7 {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(33, 185, 71);
+  padding: 1rem;
+}
+.box7:hover {
+  transform: perspective(150px) rotateY(45deg);
+  transform-origin: 0 50%;
+}
+.first-container:hover {
+  transform: perspective(150px) rotateY(45deg);
+  transform-origin: 0 0;
+}
+.second-container:hover .box {
+  transform: perspective(150px) rotateY(45deg);
+  transform-origin: 0 0;
 }
